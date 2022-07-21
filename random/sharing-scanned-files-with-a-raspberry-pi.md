@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Sharing scanned files with a Raspberry Pi"
 ---
 
