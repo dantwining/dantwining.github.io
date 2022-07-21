@@ -1,5 +1,6 @@
 ---
 layout: page
+title: rpi
 ---
 
 With multiple children on multiple devices, and just one scanner, I recently set up a Raspberry Pi to share scanned files across my home network.
