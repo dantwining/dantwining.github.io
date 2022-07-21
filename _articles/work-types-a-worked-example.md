@@ -15,7 +15,7 @@ As explored in The Phoenix Project, work can be categorised as:
 | Type 3 | Changes: Unavoidable routine work and support |
 | Type 4 | Unplanned Work: Unplanned or recovery work |
 
-The goal is to maximise the amount of Type 1 and 2 work done, especially Type 1, so that the teams are delivering valuable work and not spending time atending to Type 3 and Type 4 issues.
+The goal is to maximise the amount of Type 1 and 2 work done, especially Type 1, so that the teams are delivering valuable work and not spending time attending to Type 3 and Type 4 issues.
 
 In the rest of this article, I explore how one team’s Type 3 work can be driven by another team’s Type 1 / 2 work, and possible strategies for mitigating the impact of this undesirable Type 3 work.
 
