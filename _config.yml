@@ -21,8 +21,7 @@
 title: dantwining.github.io
 email: dantwining+githubpages@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Like martinfowler.com but far less insightful, dantwining.github.io
-  is home to anything that I write that's too substantial for a tweet.
+  Ⓒ2022
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dantwining.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dantwining
