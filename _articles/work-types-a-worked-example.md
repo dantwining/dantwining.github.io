@@ -4,7 +4,7 @@ title: Optimising Work Types - A Worked Example
 ---
 
 # Context
-We want to optimise the delivery of valuable work and minimise our unproductive labours. To do so, we categories our work, allowing us to first measure, and then control, the work we do in our team.
+We want to optimise the delivery of valuable work and minimise our unproductive labours. To do so, we categorise our work, allowing us to first measure, and then control, the work we do in our team.
 
 As explored in The Phoenix Project, work can be categorised as:
 
@@ -55,4 +55,4 @@ However, having lived this movie, one soon finds that there are a number of sign
 Do this one.
 
 # References
-Whilst this is informed by real-world experience, much of that experience overlaps with the thinking expressed in Daniel Jones’s keynote on Anthropic Sympathy, which you can see here:  https://www.youtube.com/watch?v=QWMUYl0BkEI
+Whilst this is informed by real-world experience, much of that experience overlaps with [the thinking expressed in Daniel Jones’s keynote on Anthropic Sympathy](https://www.youtube.com/watch?v=QWMUYl0BkEI), which I encourage you all to watch.  
