@@ -1,0 +1,4 @@
+- Do everything in Powershell (not Windows Powershell)
+- Sort out docker image for Hugo, follow https://github.com/GoogleCloudPlatform/cloud-builders-community/tree/master
+- Install Hugo locally
+- Clone website to parallel directory
