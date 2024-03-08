@@ -3,6 +3,10 @@ layout: page
 title: Scaling Strategies for Tech and Teams
 ---
 
+# H1
+## H2
+### H3
+
 # Resources
 
 ## Discover and Define your System Boundaries
@@ -13,9 +17,8 @@ title: Scaling Strategies for Tech and Teams
 - https://leanpub.com/introducing_eventstorming
 - Single Responsibility Principle
 
-
 ## Build Tech to your Boundaries
-- ???
+- Building Microservices
 
 ## Align Teams to your Tech
 - Inverse Conway Maneuver https://martinfowler.com/bliki/ConwaysLaw.html
