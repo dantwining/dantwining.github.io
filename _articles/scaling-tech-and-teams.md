@@ -3,13 +3,9 @@ layout: page
 title: Scaling Strategies for Tech and Teams
 ---
 
-# H1
-## H2
-### H3
+## Resources
 
-# Resources
-
-## Discover and Define your System Boundaries
+### Discover and Define your System Boundaries
 - https://martinfowler.com/bliki/DomainDrivenDesign.html
 - Book: Domain-Driven Design
 - Book: Implementing Domain-Driven Design 
@@ -17,9 +13,9 @@ title: Scaling Strategies for Tech and Teams
 - https://leanpub.com/introducing_eventstorming
 - Single Responsibility Principle
 
-## Build Tech to your Boundaries
+### Build Tech to your Boundaries
 - Building Microservices
 
-## Align Teams to your Tech
+### Align Teams to your Tech
 - Inverse Conway Maneuver https://martinfowler.com/bliki/ConwaysLaw.html
 - Team Topologies
