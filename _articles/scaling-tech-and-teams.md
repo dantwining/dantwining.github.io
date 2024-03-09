@@ -18,4 +18,4 @@ title: Scaling Strategies for Tech and Teams
 
 ### Align Teams to your Tech
 - Inverse Conway Maneuver https://martinfowler.com/bliki/ConwaysLaw.html
-- Team Topologies
+- Team Topologies https://teamtopologies.com/key-concepts 
