@@ -52,7 +52,27 @@ However, having lived this movie, one soon finds that there are a number of sign
 
 ## Strategy 2: High automation and Self Service
 
-Do this one.
+An alternative approach to the problem is to leverage high automation and self-service capabilities. The infrastructure team's goal should be to automate themselves out of all Type 3 work, to the point where in ana ideal world every request from another team for unavoidable routine work or support is done by machines. This strategy aims to:
+
+- **Reduce the reliance on manual intervention:** By automating the provisioning of github repos (or any other infrastructure task), the need for human involvement from the infrastructure team is significantly reduced. This frees them up to focus on more strategic initiatives and eliminates the bottleneck that manual work creates.
+- **Empower development teams:** With the process automated, we can just expose that process as a self-service action, usually via some sort of self-service web portal or command line interface (CLI). Development teams can request and provision github repos themselves, without needing to wait for the infrastructure team. This gives them greater control over their workflow and reduces the amount of time spent waiting on the INfrastructure team to complete these Type 3 tasks.
+
+Here's how this strategy can be implemented:
+
+1. Develop an automated provisioning tool: This tool can be built in-house or procured from a vendor. It should be able to handle the entire lifecycle of a github repo, from creation and configuration to deletion.
+2. Implement a self-service portal: This portal allows development teams to easily request the creation of new github repos. It should be integrated with the provisioning tool to automate the process and provide the teams with real-time feedback on the status of their requests.
+3. Define clear guidelines and guardrails: While automation and self-service offer flexibility, it's crucial to establish clear guidelines for how and when teams can utilize these tools. This ensures consistency in the creation and naming of repositories, adherence to security protocols, and prevents misuse.
+
+Benefits of High Automation and Self Service:
+
+- Reduced Type 3 Work: By automating the provisioning process, the infrastructure team is no longer burdened by repetitive tasks, freeing them for more strategic work. Development teams also experience less Type 3 work as they can access the infrastructure they need without relying on manual intervention.
+- Increased Team Autonomy: Self-service empowers development teams to manage their own infrastructure needs, leading to faster delivery cycles and increased responsiveness to business demands.
+- Improved Consistency: Automation ensures that github repos are created and configured consistently, adhering to pre-defined guidelines and security standards.
+- Reduced Costs: Automation can significantly reduce the long-term costs associated with manual infrastructure provisioning.
+
+This strategy aligns with the principles outlined in The Phoenix Project by maximizing the throughput of Type 1 work through automation and self-service, while minimizing the burden of Type 3 work on both teams.
+
+So, yeah, do this one.
 
 # References
 Whilst this is informed by real-world experience, much of that experience overlaps with [the thinking expressed in Daniel Jones’s keynote on Anthropic Sympathy](https://www.youtube.com/watch?v=QWMUYl0BkEI), which I encourage you all to watch.  
