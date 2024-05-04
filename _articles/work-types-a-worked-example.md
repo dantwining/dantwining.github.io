@@ -3,7 +3,7 @@ layout: page
 title: Optimising Work Types - A Worked Example
 ---
 
-# Context
+## Context
 We want to optimise the delivery of valuable work and minimise our unproductive labours. To do so, we categorise our work, allowing us to first measure, and then control, the work we do in our team.
 
 As explored in The Phoenix Project, work can be categorised as:
@@ -19,7 +19,7 @@ The goal is to maximise the amount of Type 1 and 2 work done, especially Type 1,
 
 In the rest of this article, I explore how one team’s Type 3 work can be driven by another team’s Type 1 / 2 work, and possible strategies for mitigating the impact of this undesirable Type 3 work.
 
-# Current scenario
+## Current scenario
 Imagine having multiple software delivery teams working on business initiatives. These business-led changes can be prioritised by the teams; they have control over the backlog of work and can control the point at which they tackle each stage of the development. As such, the work to deliver these business-led initiatives is Type 1 work. However, as part of the delivery of this work, the teams require various infrastructure-related actions to be performed.
 
 *This scenario uses the creation of github repos as a real-world example of infrastructure work required by software delivery teams; this is something that all developers and infrastructure should be familiar with. For anyone not familiar with github repos, it is sufficient to know that they are something that infrastructure controls and the dev teams need, and that the following all makes an equal amount of sense if you substitute “github repos” for “jam sandwiches” in all of the following text.*
@@ -34,11 +34,11 @@ In this scenario, software delivery teams are able to plan their business-led ch
 
 The infrastructure team, on the other hand, have no direct influence on the planning and execution of the delivery team, and so requests for their support in creating new github repos appear as Type 3 work; unavoidable routine work that just has to be done as and when requests appear.
 
-## Conflict
+### Conflict
 With the work flowing between the teams in this manner, conflict occurs as the Type 3 work of provisioning the github repos by the infrastructure team blocks the Type 1 work of the teams looking to build new services. With every new github repo requiring a human from the infrastructure team to be on hand to craft and apply changes, repo creation often gets delayed by other, more urgent work.
 
-# Strategies for change
-## Strategy 1: Embedded Infrastructure
+## Strategies for change
+### Strategy 1: Embedded Infrastructure
 One possible solution to the problem is to embed infrastructure experts in each of the teams. By embracing a “cross functional team” mentality, teams are built with infrastructure experts in them, and so any work that would ordinarily be passed off to the Infrastructure team as Type 3 routine maintenance becomes Type 1 business activity work for the infrastructure specialist in that team.
 
 On paper, this can be very appealing, especially as it taps into the “cross-functional teams” narrative that is very popular amongst Agile development evangelists, and it appears to reduce our Type 3 work in favour of maximising our Type 1 work, which on the face of it is exactly what the Phoenix Project is telling us to do.
@@ -50,9 +50,18 @@ However, having lived this movie, one soon finds that there are a number of sign
 - There is a lack of consistency in the work that each infrastructure specialist does, as different specialists in different teams redo the same work as each other in isolation. In our example, with each infrastructure specialist having their own credentials to create github repos, when doing so, each specialist will do it “their way”. Any cross-cutting concerns, such as security requirements, naming conventions, and so on, become much harder to enforce.
 - There is a significant amount of hidden repetition with this approach. Whilst it can look like we’re getting lots of Type 1 work done with this approach, what we’re actually doing is spending lots of time doing repetitive tasks under the guise of Type 1 work. The goal isn’t to maximise the amount of time we spend on Type 1 work, but to maximise the throughput of Type 1 work across the business; repeatedly provisioning git repos under the guise of delivering new services only slows our delivery of Type 1 work.
 
-## Strategy 2: High automation and Self Service
+### Strategy 2: High automation and Self-Service
 
-An alternative approach to the problem is to leverage high automation and self-service capabilities. The infrastructure team's goal should be to automate themselves out of all Type 3 work, to the point where in ana ideal world every request from another team for unavoidable routine work or support is done by machines. This strategy aims to:
+An alternative approach to the problem is to build a culture of automation, "automate all the things", and then surface that automation to teams as self-service capabilities. The infrastructure team's goal should be to automate themselves out of all Type 3 work, to the point where in an ideal world every request from another team for unavoidable routine work or support is done by machines.
+
+It requires discipline and support; teams drowning in labour-intensive Type 3 work are often also overwhelmed with fighting Type 4 fires and find themselves trapped in a cycle of never geeting the breathing room required to make meaningful inroads into automating their workload. But the benefits are significant; not only will you see a much more engaged infrastructure team
+
+Much has changed in the years since I first published this article, with backstage.io 
+
+
+
+
+This strategy aims to:
 
 - **Reduce the reliance on manual intervention:** By automating the provisioning of github repos (or any other infrastructure task), the need for human involvement from the infrastructure team is significantly reduced. This frees them up to focus on more strategic initiatives and eliminates the bottleneck that manual work creates.
 - **Empower development teams:** With the process automated, we can just expose that process as a self-service action, usually via some sort of self-service web portal or command line interface (CLI). Development teams can request and provision github repos themselves, without needing to wait for the infrastructure team. This gives them greater control over their workflow and reduces the amount of time spent waiting on the INfrastructure team to complete these Type 3 tasks.
@@ -74,5 +83,5 @@ This strategy aligns with the principles outlined in The Phoenix Project by maxi
 
 So, yeah, do this one.
 
-# References
+## References
 Whilst this is informed by real-world experience, much of that experience overlaps with [the thinking expressed in Daniel Jones’s keynote on Anthropic Sympathy](https://www.youtube.com/watch?v=QWMUYl0BkEI), which I encourage you all to watch.  
