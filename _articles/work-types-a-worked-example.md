@@ -70,7 +70,15 @@ So, yeah, in short, do this one.
 
 ## The state of the art
 
-Much has changed in the years since I published the first version of this article. The idea of "platform teams", "platform as a product" and entire conferences about "developer experience" and platform teams acting at a bridge between infrastructure and developers. Spearheaded by backstage.io, a whole raft of tools have emerged to act as a focal point for delivering this sort of approach strategy culture.
+Much has changed in the years since I published the first version of this article. Probably the biggest change has been the broader recognition that different aspects of work require different types of teams, and that you cannot treat all types of teams the same way. Team Topologies explores this idea in detail, and is highly recommended. For the purposes of this conversation, it's enough to know that you can't just blindly optimise the work of a specialist team in the same way as you do for your business-facing stream-aligned teams, and that blindly optimising for team-level Type 1 work across the board us unlikely to succeed.
+
+Much has changed since the initial publication of this article. Perhaps the most significant development is the broader recognition that different types of work require different team structures. This concept is explored in detail in Team Topologies, a book that I highly recommended. For the purposes of this discussion, it's sufficient to understand that simply optimizing the work of a specialist team in the same way as a business-facing, stream-aligned team is unlikely to be successful. A blanket approach of blindly maximizing team-level Type 1 work across the board is unlikelu to give you the results you're looking for.
+
+At the same time, the idea of "platform teams", "internal developer platforms", "platform as a product", and "developer experience" has really exploded. Ironically, this seems to have been driven by the popularity of Kuberenetes and the realisation that Kubernetes is *not* a platform, but *a platform to build platforms*; and that the gap between what Kubernetes does and what development teams need requires a specialist team, and specialst tools, to bridge that gap between infrastructure and the developers.
+
+Spearheaded by backstage.io, a whole raft of tools have emerged to act as a focal point for delivering this sort of approach strategy culture.
+
+Perhaps most importantly, enough developers have lived through the "you can do whatever you want" chaos of multi-langauge, multi-tech-stack microservice development to now appreciate the benefits of standardardation, the ability to scale through simplicity, and that the promised benefits of shiny new technologies still require
 
 ## References
 Whilst this is informed by real-world experience, much of that experience overlaps with [the thinking expressed in Daniel Jones’s keynote on Anthropic Sympathy](https://www.youtube.com/watch?v=QWMUYl0BkEI), which I encourage you all to watch.  
