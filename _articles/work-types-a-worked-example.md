@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Optimising Work Types - A Worked Example
+title: Optimising Work Types in Specialist Teams - A Worked Example
 ---
-
-## Context
 We want to optimise the delivery of valuable work and minimise our unproductive labours. To do so, we categorise our work, allowing us to first measure, and then control, the work we do in our team.
 
+Along with different types of work, there are also different types of teams. Where teams lean on each other to deliver value, conflict can arise around the prioritisation the work. Here, we give a real-world example of such conflict, and we work through two different approaches I've actively used in the past to attempt to resolve this conflict.
+
+## The Four Types of Work
 As explored in The Phoenix Project, work can be categorised as:
 
 | Type | Description |
@@ -19,7 +20,7 @@ The goal is to maximise the amount of Type 1 and 2 work done, especially Type 1,
 
 In the rest of this article, I explore how one team’s Type 3 work can be driven by another team’s Type 1 / 2 work, and possible strategies for mitigating the impact of this undesirable Type 3 work.
 
-## Current scenario
+## Passing work between the teams
 Imagine having multiple software delivery teams working on business initiatives. These business-led changes can be prioritised by the teams; they have control over the backlog of work and can control the point at which they tackle each stage of the development. As such, the work to deliver these business-led initiatives is Type 1 work. However, as part of the delivery of this work, the teams require various infrastructure-related actions to be performed.
 
 *This scenario uses the creation of github repos as a real-world example of infrastructure work required by software delivery teams; this is something that all developers and infrastructure teams should be familiar with. For anyone not familiar with github repos, it is sufficient to know that they are something that infrastructure controls and the dev teams need, and that the following all makes an equal amount of sense if you substitute “github repos” for “jam sandwiches” in all of the following text.*
@@ -51,34 +52,29 @@ However, having lived this movie, one soon finds that there are a number of sign
 - There is a significant amount of hidden repetition with this approach. Whilst it can look like we’re getting lots of Type 1 work done, what we’re actually doing is spending lots of time doing repetitive tasks under the guise of Type 1 work. The goal isn’t to maximise the amount of time we spend on Type 1 work, but to maximise the throughput of Type 1 work across the business; repeatedly provisioning git repos under the guise of delivering new services only slows our delivery of valuable work.
 
 ### Strategy 2: High automation and Self-Service
-
 An alternative approach to the problem is to embrace a culture of automation, turning all of those manual tasks into automated workflows, and then surfacing that automation to development teams as self-service capabilities. The infrastructure team's goal should be to automate themselves out of all Type 3 work, to the point where in an ideal world every request from another team for unavoidable routine work or support is done by machines.
 
 In the case of the github repo example, building a tool that enables developers to provision github repos on demand, whilst at the same time codifying all of the skills, knowledge, requirements and experience into the tool, both empowers development teams and eliminates manual intervention from the infrastructure team.
 
 All of the capabilities that were centralised in the team are now centralised in the tool:
-- Consistency in the creation and naming of our github repositories: Whatever rules the infrastructure team were following manually to validate requested repo names can be applied automatically. The tool can correctly format repo names, enforce any standard prefixes or suffixes, and could even provide an interactive way to produce compliant repo names.
+- Consistency in the creation and naming of our github repositories: Whatever rules the infrastructure team were following manually to validate requested repo names can be applied automatically. The tool can correctly format repo names, enforce any standard prefixes or suffixes, and could even provide an interactive way for dev teams to produce compliant repo names.
 - Security requirements: Only the tool has permissions to create or delete repositories; nothing can be done outside of the tool, and only the infrastructure team has the ability to change the tool's inner workings. Security standards can be enforced, such as ensuring that repos are private, or ensuring that the config for the repo is set to the company standard.
 - Costs and licencing: Any commercial implications can be tracked, audited and controlled. If there's a hard limit on the number of github repos we can support, then the tool can enforce it. If we're just looking to manage costs, we can track repo creation, associate repos created with the users that created them, and even rate-limit teams that are at risk of abusing the tool.
-- Knowledge gap: All of the specialist knowledge required for github administration is handled by the tool. Developers don't need any special skills to interact with the tool, and don't need to understand in full detail howit work, they just need to know how to run it.
+- Knowledge gap: All of the specialist knowledge required for github administration is handled by the tool. Developers don't need any special skills to interact with the tool, and don't need to understand in detail how it works; they just need to know how to run it.
 
-Now, instead of the infrastructure team being interrupted by the ad-hoc needs of the developers to create new repos, it's the repo-generating script that does all the work. Development teams don't need to worry about delays in provisioning repos, and the infrastructure team can use the time that they would have spent manually applying changes automating the next most important Type 3 workflow, or even spend some time on their own Type 1 and 2 projects.
+Now, instead of the infrastructure team being interrupted by the ad-hoc needs of the developers to create new repos, it's the repo-generating script that does all of the work. Development teams don't need to worry about delays in provisioning repos, and the infrastructure team can use the time that they would have spent manually applying changes automating the next most important Type 3 workflow, or even spend some time on their own Type 1 and 2 projects.
 
-Which is not to say that such a shift to automation and seflf-service is easy, nor can it happen overnight. It requires discipline and support; teams drowning in labour-intensive Type 3 work are often also overwhelmed with fighting Type 4 fires and find themselves trapped in a cycle of never getting the breathing room required to make meaningful inroads into automating their workload. Senior management needs to accept that, especially at the start, automating tasks is going to take a lot longer than just doing the task once, and they need to buy in to the benefits. But the benefits are significant; not only will you see a much more engaged infrastructure team as they're able to automate the mundate and focus on the valuable, but empowered developer teams something something something.
+Which is not to say that such a shift to automation and self-service is easy, nor can it happen overnight. It requires discipline and support; teams drowning in labour-intensive Type 3 work are often also overwhelmed with fighting Type 4 fires and find themselves trapped in a cycle of never getting the breathing room required to make meaningful inroads into automating their workload. Senior management needs to accept that, especially at the start, automating tasks is likely to take longer than just doing the task once, and they need to buy in to the benefits. But the benefits are significant; not only will you see a much more engaged infrastructure team as they're able to automate the mundate and focus on the valuable, but empowered developer teams and unterrupted flow soon leads to significant improvements in velocity.
 
-So, yeah, in short, do this one.
+So, yes, in short, do this one.
 
 ## The state of the art
 
-Much has changed in the years since I published the first version of this article. Probably the biggest change has been the broader recognition that different aspects of work require different types of teams, and that you cannot treat all types of teams the same way. Team Topologies explores this idea in detail, and is highly recommended. For the purposes of this conversation, it's enough to know that you can't just blindly optimise the work of a specialist team in the same way as you do for your business-facing stream-aligned teams, and that blindly optimising for team-level Type 1 work across the board us unlikely to succeed.
+Much has changed since the initial publication of this article. Perhaps the most significant development is the broader recognition that different types of work require different team structures. This concept is explored in detail in Team Topologies, a book that I highly recommended. For the purposes of this discussion, it's sufficient to understand that simply optimizing the work of a specialist team in the same way as a business-facing, stream-aligned team is unlikely to be successful. A blanket approach of blindly maximizing team-level Type 1 work across the board is unlikely to give you the results you're looking for.
 
-Much has changed since the initial publication of this article. Perhaps the most significant development is the broader recognition that different types of work require different team structures. This concept is explored in detail in Team Topologies, a book that I highly recommended. For the purposes of this discussion, it's sufficient to understand that simply optimizing the work of a specialist team in the same way as a business-facing, stream-aligned team is unlikely to be successful. A blanket approach of blindly maximizing team-level Type 1 work across the board is unlikelu to give you the results you're looking for.
+At the same time, the idea of "platform teams", "internal developer platforms", "platform as a product", and "developer experience" has really exploded. Ironically, this seems to have been driven by the popularity of Kuberenetes and the realisation that Kubernetes is *not* a platform, but *a platform to build platforms*; and that the gap between what Kubernetes does and what development teams need requires a specialist team, and specialst tools, to bridge that gap between infrastructure and the developers. Spearheaded by backstage.io, a whole raft of tools have emerged to act as a focal point for delivering developer portals, which act as the touchpoint between dvelopment teams and infrastructure teams, and are in effect the hosts for the sorts of self-service automation we're encouraging here.
 
-At the same time, the idea of "platform teams", "internal developer platforms", "platform as a product", and "developer experience" has really exploded. Ironically, this seems to have been driven by the popularity of Kuberenetes and the realisation that Kubernetes is *not* a platform, but *a platform to build platforms*; and that the gap between what Kubernetes does and what development teams need requires a specialist team, and specialst tools, to bridge that gap between infrastructure and the developers.
-
-Spearheaded by backstage.io, a whole raft of tools have emerged to act as a focal point for delivering this sort of approach strategy culture.
-
-Perhaps most importantly, enough developers have lived through the "you can do whatever you want" chaos of multi-langauge, multi-tech-stack microservice development to now appreciate the benefits of standardardation, the ability to scale through simplicity, and that the promised benefits of shiny new technologies still require
+Perhaps most importantly, enough developers have lived through the "you can do whatever you want" chaos of multi-langauge, multi-tech-stack microservice development to now appreciate the benefits of standardardation, the ability to scale through simplicity, and that the promised benefits of shiny new technologies still require. The "sell" of having a platform team provide you with a golden path to production for your simple-and-consistent services is hopefully not the hard sell that it once was.
 
 ## References
 Whilst this is informed by real-world experience, much of that experience overlaps with [the thinking expressed in Daniel Jones’s keynote on Anthropic Sympathy](https://www.youtube.com/watch?v=QWMUYl0BkEI), which I encourage you all to watch.  
