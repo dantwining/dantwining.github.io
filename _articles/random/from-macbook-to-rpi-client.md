@@ -1,16 +1,14 @@
 ---
 layout: page
-title: My attempts to resurrect a 2008 MacBook as a VNC Client for a Raspberry Pi Server
+title: How I repurposed a 2008 MacBook as a VNC Client for a Raspberry Pi
 ---
 
-## What you'll need
-- A 2008 MacBook running Snow Leopard
-- A Raspberry Pi 4 running Raspbian OS, with ssh enabled
-
-## What you'll do
+## What I started with
+- A 2008 MacBook running Snow Leopard, plus the Snow Leopard install disc.
+- A Raspberry Pi 4 running Raspbian OS, with ssh enabled.## My recipe for success
 - On the MacBook:
     1. Install XCode from the Snow Leopard disc.
-    1. Install [MacPorts](https://www.macports.org/) (You'll most likely need to download this on another machine then use some physical media, like a thumb drive, to transfer it over).
+    1. Install [MacPorts](https://www.macports.org/) (I had to download this on another machine then use a thumb drive to transfer it over).
     1. Using MacPorts, install the latest version of ssh: `sudo port install ssh`.
     1. Test ssh connectivity to the RPi: `ssh pi@raspberry-pi.local`.
     1. Using MacPorts, install the latest version of tightvnc: `sudo port install tightvnc`
@@ -21,8 +19,8 @@ title: My attempts to resurrect a 2008 MacBook as a VNC Client for a Raspberry P
     1. `vncviewer -fullscreen`
     1. Enter hostname including port, eg `raspberry-pi.local:5902` or `123.123.123.123:5902`
     1. If it works, congrats! If it doesn't, then sorry, but it worked for me.
-    2. Make connecting easier by running `vncpasswd` and storing the vnc password on the MacBook.
-    3. Connect using the stored password file: `vncviewer -fullscreen -... `
+    1. Make connecting easier by running `vncpasswd` and storing the vnc password on the MacBook.
+    1. Connect using the stored password file: `vncviewer -fullscreen -... `
 
 ## Further tweaks
 - VS Code keys went bonkers. Backspace didn't work, 5 was backspace, 6 was space.
