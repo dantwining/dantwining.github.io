@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Reminders
+layout: home
 permalink: /reminders/
 ---
 
