@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How I repurposed a 2008 MacBook as a VNC Client for a Raspberry Pi
+title: Repurposing a 2008 MacBook as a VNC Client for a Raspberry Pi
 ---
 
 ## What I started with

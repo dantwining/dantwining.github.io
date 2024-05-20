@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Optimising Work Types in Specialist Teams - A Worked Example
+title: Delivering Type 1 Work and Avoiding Cross-Team Conflict
 ---
 We want to optimise the delivery of valuable work and minimise our unproductive labours. To do so, we categorise our work, allowing us to first measure, and then control, the types of work we do in our team.
 
