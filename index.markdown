@@ -4,7 +4,6 @@
 
 layout: home
 ---
-# Featured Articles
 
 {% for article in site.articles %}
   <h2>
@@ -14,9 +13,9 @@ layout: home
   </h2>
 {% endfor %}
 
-# Other Things
+## Other Things
 
-{% for article in random.articles %}
+{% for article in site.random %}
   <h2>
     <a href="{{ article.url }}">
       {{ article.title }}
