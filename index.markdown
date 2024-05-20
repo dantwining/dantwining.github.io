@@ -13,7 +13,9 @@ layout: home
   </h2>
 {% endfor %}
 
-## Other Things
+<br/>
+<hr/>
+<br/>
 
 {% for article in site.random %}
   <h2>
