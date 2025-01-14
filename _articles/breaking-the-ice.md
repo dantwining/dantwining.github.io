@@ -3,6 +3,8 @@ layout: page
 title: Why I always have an Icebreaker
 ---
 
+> Part of this article talks about "modelling vulnerability". Here, I mean just sharing *light, fun and short* insights into something beyond the boundaries of work. The example given in the NYTimes artice, of someone sharing a significant medical diagnosis, is very much an extreme example of modelling vulerability, and not the sorts of ice-breaker that I'm encouraging here.
+
 Back at the beginning of my career, when I was starting to run more and more meetings, I read two articles that have really shaped the way
 that I approach opening a meeting, especially if it's a workshop or some other collaborative session.
 
